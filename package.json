@@ -1,0 +1,25 @@
+{
+  "name": "tantalum-language",
+  "displayName": "Tantalum Language",
+  "description": "The Tantalum Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tantalum",
+      "aliases": ["Tantalum", "tantalum"],
+      "extensions": [".ta"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tantalum",
+      "scopeName": "source.tantalum",
+      "path": "./syntaxes/tantalum.tmLanguage.json"
+    }]
+  }
+}

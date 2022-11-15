@@ -1,0 +1,1 @@
+Syntax Highlighting for Tantalum in VSCode. See [changelog](CHANGELOG.md) for details.
