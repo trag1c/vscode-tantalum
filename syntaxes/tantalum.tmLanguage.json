@@ -12,7 +12,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.tantalum",
-					"match": "<?->|>>|<<|\\|>|@|>>>|<<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|:|\\+=|-=|\\*=|/=|\\*\\*=|%="
+					"match": ":/|<?->|>>>|<<<|\\|>|@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|:|\\+=|-=|\\*=|/=|\\*\\*=|%=|\\?|!"
 				}
 			]
 		},
@@ -68,6 +68,10 @@
 				{
 					"name": "constant.language.tantalum",
 					"match": "\\b(self|true|false|none)\\b"
+				},
+				{
+					"name": "storage.modifier.tantalum",
+					"match": "~\\s*\\w+\\b"
 				},
 				{
 					"name": "constant.numeric.tantalum",
