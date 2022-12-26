@@ -2,8 +2,8 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Tantalum",
 	"patterns": [
-		{ "include": "#keywords" },
 		{ "include": "#atom" },
+		{ "include": "#keywords" },
 		{ "include": "#operators" },
 		{ "include": "#names" }
 	],
@@ -12,7 +12,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.tantalum",
-					"match": ":/|<?->|>>>|<<<|\\|>|@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|:|\\+=|-=|\\*=|/=|\\*\\*=|%=|\\?|!"
+					"match": ":/|<?->|>-|-<|>>>|<<<|\\|>|@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|:|\\+=|-=|\\*=|/=|\\*\\*=|%=|\\?|!"
 				}
 			]
 		},
