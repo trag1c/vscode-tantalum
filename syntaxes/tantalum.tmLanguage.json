@@ -3,6 +3,7 @@
 	"name": "Tantalum",
 	"patterns": [
 		{ "include": "#atom" },
+		{ "include": "#comments" },
 		{ "include": "#keywords" },
 		{ "include": "#operators" },
 		{ "include": "#names" }
@@ -13,6 +14,24 @@
 				{
 					"name": "keyword.control.tantalum",
 					"match": ":/|<?->|>-|-<|>>>|<<<|\\|>|@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|:|\\+=|-=|\\*=|/=|\\*\\*=|%=|\\?|!"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.samarium",
+					"begin": "/\\*",
+					"end": "\\*/"
+				},
+				{
+					"name": "comment.block.empty",
+					"match": "/\\*\\*/"
+				},
+				{
+					"name": "comment.line.tantalum",
+					"begin": "//",
+					"end": "\\n"
 				}
 			]
 		},
