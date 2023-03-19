@@ -13,7 +13,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.tantalum",
-					"match": ":/|<?->|>-|-<|>>>|<<<|\\|>|@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|\\+=|-=|\\*=|/=|\\*\\*=|%=|#>>=|#<<=|\\?|!"
+					"match": ":/|<?->|>-|-<|>>>|<<<|\\|>|<\\||@|>>|<<|==>|\\.(?!\\w)|:{0,2}=|\\?=|\\+=|-=|\\*=|/=|\\*\\*=|%=|#>>=|#<<=|\\?|!"
 				}
 			]
 		},
@@ -58,7 +58,7 @@
 		"names": {
 			"patterns": [
 				{
-                    "match": "((?:[A-Z]\\w*)+)\\(?",
+                    "match": "((?:[A-Z]\\w*)+)",
                     "captures": {
                         "1": { "name": "entity.name.class.tantalum" }
                     }
@@ -67,6 +67,13 @@
                     "match": "(\\w+)\\s*\\(",
                     "captures": {
                         "1": { "name": "entity.name.function.tantalum" }
+                    }
+                },
+                {
+                    "match": "(\\w+)\\s*(<\\|)",
+                    "captures": {
+                        "1": { "name": "entity.name.function.tantalum" },
+						"2": { "name": "keyword.control.tantalum" }
                     }
                 },
 				{
